@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>건강체크키트</title>
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/bootstrap@5.3.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background: #007c89;
+            color: white;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #eef8f9;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #007c89;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        main.container {
+            padding: 2rem 1rem;
+        }
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+        .product-card {
+            flex: 1 1 calc(33% - 1rem);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #007c89;
+        }
+        .product-card p {
+            color: #555;
+            padding: 0 1rem 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #007c89;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <a href="#overview">제품 개요</a>
+        <a href="#features">특장점</a>
+        <a href="#usage">사용방법</a>
+    </nav>
+    <header>
+        <h1>건강체크키트</h1>
+        <p>5가지 건강 지표를 한 번에 확인할 수 있는 스마트한 선택!</p>
+    </header>
+    <main class="container">
+        <section id="overview">
+            <h2>제품 개요</h2>
+            <div class="product-section">
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/featured/?health,kit" alt="건강체크키트">
+                    <h3>건강체크키트 (소)</h3>
+                    <p>생활 속에서 간편하게 당뇨, 신장, 간장 등 주요 지표를 확인하세요.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/featured/?medical,kit" alt="후다닥체크">
+                    <h3>후다닥체크</h3>
+                    <p>신속하고 정확한 체외진단기로 빠른 검사 결과를 제공합니다.</p>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <h2>특장점</h2>
+            <ul>
+                <li>FDA 인증으로 안전성과 신뢰성 확보</li>
+                <li>간편한 사용법으로 누구나 손쉽게 검사 가능</li>
+                <li>결과지 기반으로 정확한 건강 상태를 분석</li>
+            </ul>
+        </section>
+        <section id="usage">
+            <h2>사용 방법</h2>
+            <p>샘플을 간편하게 채취 후 결과지를 확인하세요. 사용 가이드는 키트에 포함되어 있습니다.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 건강체크키트. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
